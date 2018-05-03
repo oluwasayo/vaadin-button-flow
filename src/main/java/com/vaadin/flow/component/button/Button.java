@@ -155,6 +155,7 @@ public class Button extends GeneratedVaadinButton<Button>
      */
     @Override
     public void setText(String text) {
+        text = "[ " + text + " ]";
         Element[] nonTextNodes = getNonTextNodes();
         removeAll();
 
